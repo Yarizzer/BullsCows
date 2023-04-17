@@ -13,5 +13,6 @@ struct BullsCowsApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowResizability(.contentSize)
     }
 }
