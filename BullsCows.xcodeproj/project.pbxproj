@@ -33,6 +33,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7143CACD29EEBA9C00F1C0AB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7143CACE29EEBAAA00F1C0AB /* App */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		7143CACE29EEBAAA00F1C0AB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				71F5C55029ED9E5600F684E8 /* BullsCowsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7143CAD029EEBB1400F1C0AB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7143CAD129EEBB1D00F1C0AB /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7143CAD129EEBB1D00F1C0AB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				71F5C55229ED9E5600F684E8 /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		71F5C54429ED9E5600F684E8 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +84,8 @@
 		71F5C54F29ED9E5600F684E8 /* BullsCows */ = {
 			isa = PBXGroup;
 			children = (
-				71F5C55029ED9E5600F684E8 /* BullsCowsApp.swift */,
-				71F5C55229ED9E5600F684E8 /* ContentView.swift */,
+				7143CACD29EEBA9C00F1C0AB /* Application */,
+				7143CAD029EEBB1400F1C0AB /* Modules */,
 				71F5C55429ED9E5700F684E8 /* Assets.xcassets */,
 				71F5C55929ED9E5700F684E8 /* BullsCows.entitlements */,
 				71F5C55629ED9E5700F684E8 /* Preview Content */,
