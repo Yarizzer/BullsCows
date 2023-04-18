@@ -19,7 +19,7 @@ struct ContentView: View {
                 Button("Go", action: submitGuess)
             }
             .padding()
-            .frame(width: Constants.frame.width)
+//            .frame(width: Constants.frame.width)
 //            .frame(height: Constants.frame.height)
             List(testData, id: \.self) { guess in
                 HStack {
@@ -28,6 +28,7 @@ struct ContentView: View {
                     Text("4c 9b")
                 }
             }
+            .padding(10)
         }
     }
     
