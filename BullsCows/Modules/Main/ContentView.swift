@@ -13,19 +13,19 @@ struct ContentView: View {
     #warning("test section")
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0.0) {
             HStack {
                 TextField("Enter a guess…", text: .constant("1234"))
                 Button("Go", action: submitGuess)
             }
-            .padding()
+            .padding(10)
 //            .frame(width: Constants.frame.width)
 //            .frame(height: Constants.frame.height)
             List(testData, id: \.self) { guess in
                 HStack {
                     Text(guess)
                     Spacer()
-                    Text("4c 9b")
+                    Text(result(for: guess))
                 }
             }
             .padding(10)
@@ -34,6 +34,10 @@ struct ContentView: View {
     
     private func submitGuess() {
         
+    }
+    
+    private func result(for guess: String) -> String {
+        "Result"
     }
 }
 
